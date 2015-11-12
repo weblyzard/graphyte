@@ -22,4 +22,4 @@ npm start
 
 ## Documentation
 
-See Wiki.
+See Wiki: https://github.com/weblyzard/graphyte/wiki
