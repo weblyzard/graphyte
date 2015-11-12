@@ -6,8 +6,26 @@ _Graphyte_ is a JavaScript based graph visualization library built with emphasis
 
 ```bash
 npm install graphyte
-cd graphyte
-npm install
+```
+
+## General Usage
+
+_Graphyte_ is following the AMD module pattern using [RequireJS](http://requirejs.org):
+
+```javascript
+require.config({
+  baseUrl: 'node_modules/graphyte',
+  paths: {
+    'd3': 'node_modules/d3/d3'
+  }
+});
+
+require(['d3', 'js/core'], function(d3, graphyte) {
+  var graph = graphyte()
+    .width(800)
+    .height(600)
+    .debug(true);
+});
 ```
 
 ## Examples
@@ -15,11 +33,21 @@ npm install
 To run the examples in your browser:
 
 ```bash
-cd graphyte
-npm install --only=dev
+cd node_modules/graphyte
+npm install
 npm start
+```
+
+## Testing
+
+_Graphyte_ is using QUnit for testing its basic functionality:
+
+```bash
+cde node_modules/graphyte
+npm install
+npm test
 ```
 
 ## Documentation
 
-See Wiki: https://github.com/weblyzard/graphyte/wiki
+See Wiki: <https://github.com/weblyzard/graphyte/wiki>
