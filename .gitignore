@@ -1,0 +1,6 @@
+.AppleDouble
+.project
+.settings
+/node_modules
+/docs
+/eval

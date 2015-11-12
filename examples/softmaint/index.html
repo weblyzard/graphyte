@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<meta charset='utf-8'>
+<link rel='stylesheet/less' type='text/css' href='/less/main.less'>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+
+<script>
+  window.less = {
+    env: 'development',
+    async: true
+  };
+</script>
+
+<script src='/js/config.js'></script>
+<script src='/node_modules/graphlib-dot/dist/graphlib-dot.js'></script>
+<script src='/node_modules/less/dist/less.min.js'></script>
+<script src='/node_modules/requirejs/require.js'></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+
+<h1>Softmaint</h1>
+<div id='graph'></div>
+<a href='http://www.graphviz.org/content/softmaint'>Source</a>
+
+<script>
+  require([
+    'd3',
+    'js/core',
+    'layouts/force',
+    'layouts/zoom'
+  ], function(
+    d3,
+    graphyte,
+    forceLayout,
+    zoomLayout
+  ) {
+    d3.text('data.gv', function(error, result) {
+      if (error) throw error;
+
+      var force = forceLayout();
+      var zoom = zoomLayout();
+
+      var graph = graphyte()
+        .arrows(true)
+        .layout(zoom, force);
+
+      graph.import(result, 'dot');
+      d3.select('#graph').call(graph);
+    });
+  });
+</script>
+
+<pre><code class='javascript'>
+  require([
+    'd3',
+    'js/core',
+    'layouts/force',
+    'layouts/zoom'
+  ], function(
+    d3,
+    graphyte,
+    forceLayout,
+    zoomLayout
+  ) {
+    d3.text('data.gv', function(error, result) {
+      if (error) throw error;
+
+      var force = forceLayout();
+      var zoom = zoomLayout();
+
+      var graph = graphyte()
+        .arrows(true)
+        .layout(zoom, force);
+
+      graph.import(result, 'dot');
+      d3.select('#graph').call(graph);
+    });
+  });
+</code></pre>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>

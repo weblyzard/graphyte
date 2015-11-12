@@ -1,0 +1,38 @@
+{
+  "name": "graphyte",
+  "version": "1.0.0",
+  "description": "A JavaScript-based graph visualization library with emphasis on customization and modularity.",
+  "main": "index.js",
+  "dependencies": {
+    "d3": "^3.5.6",
+    "graphlib-dot": "^0.6.2",
+    "jquery": "^2.1.4",
+    "less": "^2.5.1",
+    "requirejs": "^2.1.20"
+  },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "test": "node scripts/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weblyzard/graphyte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webLyzard/graphyte/issues"
+  },
+  "keywords": [
+    "graph",
+    "visualization",
+    "library"
+  ],
+  "author": "webLyzard technology GmbH",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "connect": "^3.4.0",
+    "lodash-amd": "^3.10.1",
+    "open": "0.0.5",
+    "qunitjs": "^1.18.0",
+    "serve-static": "^1.10.0"
+  }
+}
