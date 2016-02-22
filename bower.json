@@ -1,0 +1,25 @@
+{
+  "name": "graphyte",
+  "description": "A JavaScript-based graph visualization library with emphasis on customization and modularity.",
+  "main": "index.js",
+  "authors": [
+    "webLyzard technology GmbH"
+  ],
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "graph",
+    "visualization",
+    "library"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "homepage": "https://github.com/weblyzard/graphyte",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
