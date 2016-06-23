@@ -1,6 +1,9 @@
 # Graphyte
 
-_Graphyte_ is a JavaScript based graph visualization library built with emphasis on customization and modularity. These design decisions led to a core framework responsible for interconnecting pluggable modules. Following that spirit, _Graphyte_ doesn’t offer ready-made visualizations like e.g. HighCharts or NVD3 which offer out-of-the-box solutions for standard charts. Instead, the intended audience of _Graphyte_ are developers who are looking for a solid library to create heavily customized graph visualizations. 
+_Graphyte_ is a JavaScript based graph visualization library built with emphasis on customization and modularity. These design decisions led to a core framework responsible for interconnecting pluggable modules. Following that spirit, _Graphyte_ doesn’t offer ready-made visualizations like e.g. HighCharts or NVD3 which offer out-of-the-box solutions for standard charts. Instead, the intended audience of _Graphyte_ are developers who are looking for a solid library to create heavily customized graph visualizations.
+
+[![npm version](https://badge.fury.io/js/graphyte.svg)](https://badge.fury.io/js/graphyte)
+[![Bower version](https://badge.fury.io/bo/graphyte.svg)](https://badge.fury.io/bo/graphyte)
 
 ## Installation
 
