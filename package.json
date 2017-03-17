@@ -1,6 +1,6 @@
 {
   "name": "graphyte",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A JavaScript-based graph visualization library with emphasis on customization and modularity.",
   "main": "index.js",
   "dependencies": {
