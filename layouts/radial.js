@@ -1,4 +1,5 @@
-define(['d3', 'layouts/abstract'], function(d3, layout) {
+define(function(require) {
+  var layout = require('layouts/abstract');
 
   'use strict';
 

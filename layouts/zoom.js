@@ -1,8 +1,7 @@
-define([
-  'd3',
-  'layouts/abstract',
-  'js/zoombehaviorboundaries'
-], function(d3, layout, zoomBehaviorBoundaries) {
+define(function(require) {
+  var d3 = require('d3');
+  var layout = require('layouts/abstract');
+  var zoomBehaviorBoundaries = require('js/zoombehaviorboundaries');
 
   'use strict';
 

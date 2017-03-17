@@ -1,4 +1,6 @@
-define(['d3', 'js/util'], function(d3, util) {
+define(function(require) {
+  var d3 = require('d3');
+  var util = require('js/util');
 
   'use strict';
 
