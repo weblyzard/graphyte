@@ -9,7 +9,7 @@ define(function(require) {
     var _alignment = 'parent';
     var _debug = false;
     var _lineHeight = 13;
-    var _maxWidth = 0;
+    // var _maxWidth = 0;
     var _maxLength = 18;
     var _outlines = true;
 
@@ -101,7 +101,7 @@ define(function(require) {
 
     labels.refresh = function(selection) {
       var graph = labels.graph();
-      var canvas = graph.canvas();
+      // var canvas = graph.canvas();
       var labelElements = selection.selectAll('.label');
 
       var translate = function(label, vertex) {
