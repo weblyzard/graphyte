@@ -1,53 +1,53 @@
 #graphyte-arrow-def {
-    fill: @graphyte-edge-color;
-    fill-opacity: @graphyte-edge-opacity;
+  fill: @graphyte-edge-color;
+  fill-opacity: @graphyte-edge-opacity;
 }
 
 .vertex {
-    cursor: pointer;
+  cursor: pointer;
 
-    circle {
-        fill: @graphyte-vertex-color;
-        stroke: @graphyte-link-color;
-        stroke-width: .5pt;
+  circle {
+    fill: @graphyte-vertex-color;
+    stroke: @graphyte-link-color;
+    stroke-width: .5pt;
+  }
+
+  g.label {
+    text, .matte {
+      fill: @graphyte-text-color;
+      font-size: @graphyte-text-fontsize;
+      text-rendering: geometricPrecision; // prevent labels from causing jitter on resize
     }
 
-    g.label {
-        text, .matte {
-            fill: @graphyte-text-color;
-            font-size: @graphyte-text-fontsize;
-            text-rendering: geometricPrecision; // prevent labels from causing jitter on resize
-        }
-
-        .matte {
-            stroke: @graphyte-text-matte;
-            stroke-width: @graphyte-text-matte-stroke-width;
-            opacity: @graphyte-text-matte-opacity;
-        }
+    .matte {
+      stroke: @graphyte-text-matte;
+      stroke-width: @graphyte-text-matte-stroke-width;
+      opacity: @graphyte-text-matte-opacity;
     }
+  }
 }
 
 .vertex.root circle {
-    fill: @graphyte-highlight-fill;
-    stroke: @graphyte-root-color;
-    stroke-width: @graphyte-root-width;
+  fill: @graphyte-highlight-fill;
+  stroke: @graphyte-root-color;
+  stroke-width: @graphyte-root-width;
 }
 
 .vertex:hover circle, .vertex circle:hover {
-    stroke: @graphyte-highlight-stroke;
-    stroke-width: @graphyte-highlight-width;
+  stroke: @graphyte-highlight-stroke;
+  stroke-width: @graphyte-highlight-width;
 }
 
 .vertex:hover .label, .vertex .label:hover {
-    fill: @graphyte-highlight-stroke;
+  fill: @graphyte-highlight-stroke;
 }
 
 .satellite {
-    fill: @graphyte-vertex-color;
+  fill: @graphyte-vertex-color;
 }
 
 .edge {
-    stroke: @graphyte-edge-color;
-    stroke-width: @graphyte-edge-width;
-    stroke-opacity: @graphyte-edge-opacity;
+  stroke: @graphyte-edge-color;
+  stroke-width: @graphyte-edge-width;
+  stroke-opacity: @graphyte-edge-opacity;
 }
