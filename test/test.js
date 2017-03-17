@@ -1,16 +1,8 @@
-define([
-  'lodash',
-  'jquery',
-  'qunit',
-  'js/core',
-  'layouts/satellites'
-], function(
-  _,
-  $,
-  QUnit,
-  graphyte,
-  satellitesLayout
-) {
+define(function(require) {
+  var _ = require('lodash');
+  var QUnit = require('qunit');
+  var graphyte = require('js/core');
+  var satellitesLayout = require('layouts/satellites');
 
   'use strict';
 
