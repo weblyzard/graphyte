@@ -1,9 +1,7 @@
 // zoombehaviorboundaries wrapped as a require.js module
-define([
-  'node_modules/jquery/dist/jquery', 'd3',
-],
-
-function(undefined, d3) {
+define(function(require) {
+  var $ = require('node_modules/jquery/dist/jquery');
+  var d3 = require('d3');
 
   'use strict';
 

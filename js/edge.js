@@ -1,12 +1,5 @@
-define([
-  'd3',
-  'js/svg',
-  'js/util'
-], function(
-  d3,
-  svg,
-  util
-) {
+define(function(require) {
+  var util = require('js/util');
 
   'use strict';
 

@@ -1,4 +1,5 @@
-define(['d3'], function(d3) {
+define(function(require) {
+  var d3 = require('d3');
 
   'use strict';
 
