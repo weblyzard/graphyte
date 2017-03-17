@@ -415,11 +415,11 @@ define(function(require) {
       assert.equal(graph.satellites().length, 0, 'Satellites array is empty');
       assert.equal(graph.count(), 0, 'Graph is empty');
 
-      var vertexWithSatellite = {satellite: true};
+      vertexWithSatellite = {satellite: true};
       assert.ok(graph.add(vertex1), 'Add a vertex');
       assert.ok(graph.add(vertexWithSatellite), 'Add a vertex with a satellite');
       assert.equal(graph.vertices().length, 2, 'There are two vertices now');
-      var satellites = graph.satellites();
+      satellites = graph.satellites();
       assert.equal(satellites.length, 1, 'There is one satellite vertex');
       assert.equal(vertexWithSatellite.satellite, satellites[0],
         'The vertex’s satellite property is set to the new satellite vertex');
