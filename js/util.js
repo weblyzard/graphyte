@@ -88,16 +88,16 @@ define(function(require) {
       if (settings.limit) {
         if (settings.delay) {
           if (limitCondition && delayCondition) {
-            console.log.apply(console, arguments);
+            // console.log.apply(console, arguments);
             counter += 1;
             lastDate = now;
           }
         } else if (limitCondition) {
-          console.log.apply(console, arguments);
+          // console.log.apply(console, arguments);
           counter += 1;
         }
       } else if (settings.delay && delayCondition) {
-        console.log.apply(console, arguments);
+        // console.log.apply(console, arguments);
         lastDate = now;
       }
     };
