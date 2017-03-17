@@ -136,8 +136,7 @@ define([
       vertices.attr('transform', function(vertex) {
         var center = _root || graph.center();
 
-        if (!vertex.root) {
-        } else if (vertex.root && _root) {
+        if (vertex.root && _root) {
           center = graph.center();
           _root.x = _root.px = center.x;
           _root.y = _root.py = center.y;
@@ -240,8 +239,8 @@ define([
           },
 
           height: function(rect) {
-           return rect.height;
-         }
+            return rect.height;
+          }
         });
       }
 
@@ -333,8 +332,6 @@ define([
         });
         return edges[0];
       }
-
-      return;
     };
 
     graph.remove = function(vertices) {

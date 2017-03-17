@@ -47,7 +47,7 @@ define(function() {
             size: parseFloat(parts.shift())
           });
         } else if (mode === 'edge') {
-          var parts = line.split(/\s/);
+          parts = line.split(/\s/);
           edges.push({
             source: parseInt(parts[1], 10) - 1,
             target: parseInt(parts[2], 10) - 1,

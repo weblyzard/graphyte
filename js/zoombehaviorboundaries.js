@@ -160,5 +160,4 @@ define(function(require) {
   };
 
   return zoombehaviorboundaries;
-
 });
