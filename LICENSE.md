@@ -1,4 +1,4 @@
-Copyright (c) 2015 webLyzard technology GmbH
+Copyright (c) 2015-2017 webLyzard technology GmbH
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
