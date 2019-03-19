@@ -1,6 +1,6 @@
 define(function(require) {
   var d3 = require('d3');
-  var layout = require('layouts/absctract');
+  var layout = require('layouts/abstract');
 
   'use strict';
 
